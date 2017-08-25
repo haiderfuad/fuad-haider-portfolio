@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <!-- Responsiveness meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Fuad">
+    <meta name="author" content="Fuad ">
     <link rel="stylesheet" href="style/css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <title>Fuad Haider Projects</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fuad Haider Achievements</title>
   </head>
   <body>
     <nav>
@@ -22,7 +22,7 @@
       <div id="menu-div" class="menu-div">
         <a href="index.html" onclick="autoScrollTo('profile-section-1');">Profile</a>
         <a href="project.html" onclick="autoScrollTo('projects-section-1');">Projects</a>
-        <a href="achievement.html" onclick="autoScrollTo('achievements-section-1');">Achievements</a>
+        <a href="#achievements" onclick="autoScrollTo('achievements-section-1');">Achievements</a>
         <a href="#skillset" onclick="autoScrollTo('skillset-section-1');">Skillset</a>
         <a href="#experiences" onclick="autoScrollTo('experiences-section-1');">Experiences</a>
         <a href="#education" onclick="autoScrollTo('education-section-1');">Education</a>
@@ -35,31 +35,27 @@
         <a href="#hamburger" id="hamburger-icon" onclick="dropMenu()">&#9776;</a>
       </div>
     </nav>
-    <!-- project section -->
-    <section id="projects-section-1" class="background-fixed">
-      <img id="submarine-image"
-        src="https://drive.google.com/uc?id=0ByviqDCTZS_CYXY4WHFHUVJPblk"
-          alt="submarine">
+    <section id="achievements-section-1">
+      <!-- 2 parallax images in divs -->
+      <div id="achievements-image-1"></div>
+      <div id="achievements-image-2"></div>
     </section>
-    <section id="projects-section-2">
-      <i id="wrench-icon" class="material-icons">build</i>
 
-      <h1>Projects</h1>
-      <div id="projects-gallery">
-        <a href="swipemarine.html">
-          <img src="https://drive.google.com/uc?id=0ByviqDCTZS_CRm90ZU9EY2FjRUk"
-            alt="Swipemarine" style="width:50%">
-        </a>
-        <p>SwipeMarine</p>
-      </div>
-      <div id="projects-gallery">
-        <a href="quip.html">
-          <img src="https://drive.google.com/uc?id=0ByviqDCTZS_CTzNsUGNFWmIwems"
-            alt="Quip" style="width:50%">
-        </a>
-        <p>Quip</p>
-      </div>
-      <p style="visibility:hidden">bottom</p>
+    <section id="achievements-section-2">
+      <i id="trophy-icon" class="fa fa-trophy"></i>
+      <h1 style="text-align:center">Achievements</h1>
+      <ul>
+        <li>Migrating from senior business career to technical profession and
+        creating websites and mobile apps single-handedly from inception to
+        publication along with quick completion of web course.</li>
+        <li>Enlarged market share, increased turnover by up to 17% and gross profit
+        by up to 31%.</li>
+        <li>Improved customer satisfaction, resulting in 0 customer complaints and
+         achieved 100% score in all mystery customer visits.</li>
+        <li>Coordinated training of over 120 employees, mentored over 10 employees,
+        inspired demotivated employees resulting in reduced employee turnover by 30%.</li>
+        <li>Reduced cost by up to 12% in trading, staffing and merchandising.</li>
+      </ul>
     </section>
   </body>
 </html>
