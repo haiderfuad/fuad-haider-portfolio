@@ -176,7 +176,7 @@ nav {
 #projects-section-2 {
   position: relative;
   z-index: 2;
-  background-color: rgb(54, 57, 61);
+  background-color: $frame-colour;
   padding: 30px 10px 0 30px;
   color: white;
   text-align: center;
@@ -188,6 +188,12 @@ nav {
   top: 5px;
   left: 5px;
   width: 5%;
+}
+
+#projects-gallery {
+  display: block;
+  float: left;
+  width: 50%;
 }
 
 /*Bigger font size for bigger screen*/

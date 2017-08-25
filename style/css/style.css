@@ -121,6 +121,47 @@ nav {
   left: 5px;
   width: 5%; }
 
+/*animated undersea background and rocks moving in different speed*/
+#projects-section-1 {
+  height: 400px;
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CbDVheURTWUpiTGs"), url("https://drive.google.com/uc?id=0ByviqDCTZS_CaVBYU0RZVkJGZ2M");
+  background-repeat: repeat-x, repeat-x;
+  animation: animate-background linear 50s infinite; }
+
+@keyframes animate-background {
+  from {
+    background-position: 0px 0px, 0px 0px; }
+  to {
+    background-position: -3000px 0px, -1995px 0px; } }
+/*Aligning submaire image horizontally by margin and vertically by translateY*/
+#submarine-image {
+  position: relative;
+  display: block;
+  width: 40%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%); }
+
+#projects-section-2 {
+  position: relative;
+  z-index: 2;
+  background-color: #36393d;
+  padding: 30px 10px 0 30px;
+  color: white;
+  text-align: center;
+  font-size: 10px; }
+
+#wrench-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5%; }
+
+#projects-gallery {
+  display: block;
+  float: left;
+  width: 50%; }
+
 /*Bigger font size for bigger screen*/
 @media screen and (min-width: 600px) {
   #profile-section-2, #projects-section-2, #achievements-section-2,
