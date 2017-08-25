@@ -1,0 +1,128 @@
+/*Fuad Haider Web CV*/
+/*web font from google*/
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+/*Making default margin and padding to zero*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Titillium Web font for all contents, sans serif for backup*/
+body {
+  font-family: 'Titillium Web', sans-serif; }
+
+/*Nav tag will hold logo, menues, and icon*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  /*hf logo*/
+  /*Middle postion on Nav*/
+  /*Menu dropdown on click hamburger icon*/
+  /*Hamburger menu div for smaller screen*/ }
+  nav #logo-div {
+    background-color: rgba(54, 57, 61, 0.9);
+    float: left;
+    width: 12%;
+    height: 48px;
+    /*Image of logo hf*/ }
+    nav #logo-div img {
+      height: 100%; }
+  nav .menu-div {
+    float: left;
+    background-color: rgba(54, 57, 61, 0.9);
+    width: 80%;
+    height: 48px;
+    /*Display no menu content by default*/ }
+    nav .menu-div a {
+      display: none; }
+  nav .menu-div.menu-drop {
+    display: inline;
+    width: 80%;
+    height: auto;
+    /*Contents on dropdown menu*/ }
+    nav .menu-div.menu-drop a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 11px 16px;
+      text-decoration: none;
+      font-size: 10px;
+      font-family: "Titillium Web", sans-serif; }
+    nav .menu-div.menu-drop a:hover {
+      color: black; }
+  nav #hamburger-div {
+    background-color: rgba(54, 57, 61, 0.9);
+    float: left;
+    width: 8%;
+    height: 48px;
+    /*Hambuger menu icon*/ }
+    nav #hamburger-div #hamburger-icon {
+      color: #f2f2f2;
+      padding: 0 1%;
+      text-decoration: none;
+      font-size: 32px;
+      position: absolute;
+      right: 0;
+      top: 0; }
+
+/*nav contents change colour on hover*/
+#logo-div img:hover, .menu-div a:hover, #hamburger-div a:hover {
+  background-color: #ddd;
+  color: black; }
+
+/*Bigger font size for bigger screen*/
+@media screen and (min-width: 600px) {
+  #profile-section-2, #projects-section-2, #achievements-section-2,
+  #skillset-section-2, #experiences-section-2, #education-section-2,
+  #travelling-section-2, #interests-section-2, #contact-section-2,
+  #swipemarine-section-1, #quip-section-1, #travelling-page-section-1,
+  #travelling-page-section-2, #contacting-section-1 {
+    font-size: 20px; }
+
+  nav #menu-div a {
+    font-size: 17px; }
+
+  /*Bigger images for bigger screen*/
+  #home-section-1, #profile-section-1 {
+    background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CaW42T3dkaVpKc3c");
+    /*background-image: url('images/hfshard.png');*/ }
+
+  #achievements-image-1 {
+    background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CMVVIZ3huVTRiRGs"); }
+
+  #achievements-image-2 {
+    background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CZWFZUUxpVTdqY00"); }
+
+  #education-section-1 {
+    background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CLW1uYkNubkNRYUk"); }
+
+  #travelling-image-1 {
+    background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CblE3dlRoS08wY3M"); }
+
+  #travelling-image-2 {
+    background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CWmwwRXJxODU5V0U"); }
+
+  #contact-div-1 {
+    background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CTGdSeXRKWEF0UFk"); }
+
+  #contact-div-2 {
+    background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CSjNOWVpPYk5zNWs"); } }
+/*For biggest screen*/
+@media screen and (min-width: 1150px) {
+  /*Hamburger icon will not show for bigger screen*/
+  #hamburger-icon {
+    display: none; }
+
+  /*Menu contents will show on bigger screen*/
+  nav .menu-div a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 11px 16px;
+    text-decoration: none;
+    font-family: "Titillium Web", sans-serif; } }
+
+/*# sourceMappingURL=style.css.map */
