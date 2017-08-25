@@ -8,7 +8,7 @@
 
 /*Titillium Web font for all contents, sans serif for backup*/
 body {
-  font-family: "Titillium Web", sans-serif; }
+  font-family: 'Titillium Web', sans-serif; }
 
 /*Nav tag will hold logo, menues, and icon*/
 nav {
@@ -72,15 +72,6 @@ nav {
   background-color: #ddd;
   color: black; }
 
-/*Scroll gif image*/
-#scroll-icon {
-  display: block;
-  position: fixed;
-  top: 10%;
-  right: 5%;
-  width: 10%;
-  z-index: 5; }
-
 /*Background image fixed for not scrolling*/
 .background-fixed {
   background-size: cover;
@@ -91,7 +82,7 @@ nav {
 /*Home page*/
 #home-section-1 {
   background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CMUdHd0dZQmktbDQ");
-  height: 300px; }
+  height: 630px; }
 
 /*Bottom bar on home page*/
 #home-section-2 {
@@ -159,7 +150,7 @@ nav {
   #contact-div-2 {
     background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CSjNOWVpPYk5zNWs"); } }
 /*For biggest screen*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1150px) {
   /*Hamburger icon will not show for bigger screen*/
   #hamburger-icon {
     display: none; }
