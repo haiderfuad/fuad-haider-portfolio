@@ -3,6 +3,9 @@
 /*web font from google*/
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
+// importing codes from _config partial
+@import 'config';
+
 /*Making default margin and padding to zero*/
 * {
   margin: 0;
@@ -11,7 +14,7 @@
 
 /*Titillium Web font for all contents, sans serif for backup*/
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: $body-font;
 }
 
 /*Nav tag will hold logo, menues, and icon*/
@@ -22,7 +25,7 @@ nav {
   z-index: 5;
   /*hf logo*/
   #logo-div {
-    background-color: rgba(54, 57, 61, 0.9);
+    background-color: $nav-colour;
     float: left;
     width: 12%;
     height: 48px;
@@ -34,7 +37,7 @@ nav {
   /*Middle postion on Nav*/
   .menu-div {
     float: left;
-    background-color: rgba(54, 57, 61, 0.9);
+    background-color: $nav-colour;
     width: 80%;
     height: 48px;
     /*Display no menu content by default*/
@@ -56,7 +59,7 @@ nav {
     padding: 11px 16px;
     text-decoration: none;
     font-size: 10px;
-    font-family: "Titillium Web", sans-serif;
+    font-family: $body-font;
     }
     a:hover {
       color: black;
@@ -64,7 +67,7 @@ nav {
   }
   /*Hamburger menu div for smaller screen*/
   #hamburger-div {
-    background-color: rgba(54, 57, 61, 0.9);
+    background-color: $nav-colour;
     float: left;
     width: 8%;
     height: 48px;
@@ -107,13 +110,14 @@ nav {
 
 /*Home page*/
 #home-section-1 {
-  background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CMUdHd0dZQmktbDQ');
+  background-image:
+  url('https://drive.google.com/uc?id=0ByviqDCTZS_CMUdHd0dZQmktbDQ');
   height: 300px;
 }
 
 /*Bottom bar on home page*/
 #home-section-2 {
-  background-color: rgb(54, 57, 61);
+  background-color: $frame-colour;
   padding: 5%;
   color: white;
   text-align: center;
@@ -121,14 +125,15 @@ nav {
 }
 
 #profile-section-1 {
-  background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CMUdHd0dZQmktbDQ');
+  background-image:
+  url('https://drive.google.com/uc?id=0ByviqDCTZS_CMUdHd0dZQmktbDQ');
   filter: blur(3px);
   height: 300px;
 }
 
 #profile-section-2 {
   position: relative;
-  background-color: rgb(54, 57, 61);
+  background-color: $frame-colour;
   color: white;
   font-size: 10px;
   padding: 30px 10px;
@@ -141,6 +146,54 @@ nav {
   top: 5px;
   left: 5px;
   width: 5%;
+}
+
+/*animated undersea background and rocks moving in different speed*/
+#projects-section-1 {
+    height: 400px;
+    background-image:
+    url('https://drive.google.com/uc?id=0ByviqDCTZS_CbDVheURTWUpiTGs'),
+    url('https://drive.google.com/uc?id=0ByviqDCTZS_CaVBYU0RZVkJGZ2M');
+    background-repeat: repeat-x, repeat-x;
+    animation: animate-background linear 50s infinite;
+}
+
+@keyframes animate-background {
+  from {background-position: 0px 0px, 0px 0px;}
+  to {background-position: -3000px 0px, -1995px 0px;}
+}
+
+/*Aligning submaire image horizontally by margin and vertically by translateY*/
+#submarine-image {
+  position: relative;
+  display: block;
+  width: 40%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#projects-section-2 {
+  position: relative;
+  z-index: 2;
+  background-color: $frame-colour;
+  padding: 30px 10px 0 30px;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+
+#wrench-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5%;
+}
+
+#projects-gallery {
+  display: block;
+  float: left;
+  width: 50%;
 }
 
 /*Bigger font size for bigger screen*/
@@ -158,31 +211,39 @@ nav {
    /*Bigger images for bigger screen*/
 
      #home-section-1, #profile-section-1 {
-       background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CaW42T3dkaVpKc3c');
+       background-image:
+         url('https://drive.google.com/uc?id=0ByviqDCTZS_CaW42T3dkaVpKc3c');
        /*background-image: url('images/hfshard.png');*/
      }
 
 
    #achievements-image-1 {
-     background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CMVVIZ3huVTRiRGs');
+     background-image:
+     url('https://drive.google.com/uc?id=0ByviqDCTZS_CMVVIZ3huVTRiRGs');
    }
    #achievements-image-2 {
-     background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CZWFZUUxpVTdqY00');
+     background-image:
+     url('https://drive.google.com/uc?id=0ByviqDCTZS_CZWFZUUxpVTdqY00');
    }
    #education-section-1 {
-     background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CLW1uYkNubkNRYUk');
+     background-image:
+     url('https://drive.google.com/uc?id=0ByviqDCTZS_CLW1uYkNubkNRYUk');
    }
    #travelling-image-1 {
-     background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CblE3dlRoS08wY3M');
+     background-image:
+     url('https://drive.google.com/uc?id=0ByviqDCTZS_CblE3dlRoS08wY3M');
    }
    #travelling-image-2 {
-     background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CWmwwRXJxODU5V0U');
+     background-image:
+     url('https://drive.google.com/uc?id=0ByviqDCTZS_CWmwwRXJxODU5V0U');
    }
    #contact-div-1 {
-     background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CTGdSeXRKWEF0UFk');
+     background-image:
+     url('https://drive.google.com/uc?id=0ByviqDCTZS_CTGdSeXRKWEF0UFk');
    }
    #contact-div-2 {
-     background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CSjNOWVpPYk5zNWs');
+     background-image:
+     url('https://drive.google.com/uc?id=0ByviqDCTZS_CSjNOWVpPYk5zNWs');
    }
 }
 
@@ -200,6 +261,6 @@ nav {
     text-align: center;
     padding: 11px 16px;
     text-decoration: none;
-    font-family: "Titillium Web", sans-serif;
+    font-family: $body-font;
   }
 }
