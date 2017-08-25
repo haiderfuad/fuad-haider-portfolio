@@ -87,6 +87,62 @@ nav {
   color: black;
 }
 
+/*Scroll gif image*/
+#scroll-icon {
+  display: block;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  width: 10%;
+  z-index: 5;
+}
+
+/*Background image fixed for not scrolling*/
+.background-fixed {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*Home page*/
+#home-section-1 {
+  background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CMUdHd0dZQmktbDQ');
+  height: 300px;
+}
+
+/*Bottom bar on home page*/
+#home-section-2 {
+  background-color: rgb(54, 57, 61);
+  padding: 5%;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+#profile-section-1 {
+  background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CMUdHd0dZQmktbDQ');
+  filter: blur(3px);
+  height: 300px;
+}
+
+#profile-section-2 {
+  position: relative;
+  background-color: rgb(54, 57, 61);
+  color: white;
+  font-size: 10px;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+/*Responsive logo based on browser size*/
+#profile-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5%;
+}
+
 /*Bigger font size for bigger screen*/
 @media screen and (min-width: 600px) {
   #profile-section-2, #projects-section-2, #achievements-section-2,
@@ -100,10 +156,13 @@ nav {
      font-size: 17px;
    }
    /*Bigger images for bigger screen*/
-   #home-section-1, #profile-section-1 {
-     background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CaW42T3dkaVpKc3c');
-     /*background-image: url('images/hfshard.png');*/
-   }
+
+     #home-section-1, #profile-section-1 {
+       background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CaW42T3dkaVpKc3c');
+       /*background-image: url('images/hfshard.png');*/
+     }
+
+
    #achievements-image-1 {
      background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CMVVIZ3huVTRiRGs');
    }
@@ -128,7 +187,7 @@ nav {
 }
 
 /*For biggest screen*/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1000px) {
   /*Hamburger icon will not show for bigger screen*/
   #hamburger-icon {
     display: none;
