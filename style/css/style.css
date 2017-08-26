@@ -170,7 +170,8 @@ nav {
 #achievements-image-1 {
   position: absolute;
   bottom: 0;
-  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CTXNrNVViMlRoNlk");
+  background-image:
+  url("https://drive.google.com/uc?id=0ByviqDCTZS_CTXNrNVViMlRoNlk");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -180,7 +181,8 @@ nav {
 #achievements-image-2 {
   position: absolute;
   bottom: 0;
-  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CLVVUVkp6WVp4VWc");
+  background-image:
+  url("https://drive.google.com/uc?id=0ByviqDCTZS_CLVVUVkp6WVp4VWc");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -200,6 +202,87 @@ nav {
   top: 5px;
   left: 5px;
   width: 5%; }
+
+#skillset-section-1 {
+  position: relative;
+  height: 400px;
+  overflow: hidden; }
+
+/*static HTML code image*/
+#html-code {
+  position: absolute;
+  bottom: 0;
+  left: -30%;
+  background-image:
+  url("https://drive.google.com/uc?id=0ByviqDCTZS_CcU14RTlxdEg4MTQ");
+  background-size: cover;
+  height: 120%;
+  width: 130%; }
+
+/*following 3 images will be visible along scrolling*/
+.demo-menu {
+  Visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  background-image:
+  url("https://drive.google.com/uc?id=0ByviqDCTZS_CeUh2RnBaMDZ6SGs");
+  background-size: cover;
+  background-position: center;
+  height: 10%;
+  width: 80%; }
+
+.supernova-image {
+  Visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  background-image:
+  url("https://drive.google.com/uc?id=0ByviqDCTZS_CVVZieHNHcEdxZG8");
+  background-size: cover;
+  background-position: center;
+  height: 45%;
+  width: 80%; }
+
+.supernova-text {
+  Visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  background-image:
+  url("https://drive.google.com/uc?id=0ByviqDCTZS_CR1M1NU5TNnlfa1U");
+  background-size: cover;
+  background-position: center;
+  height: 30%;
+  width: 80%; }
+
+/*Images will be visible on scrolling*/
+.show-skill {
+  transition: opacity 0.5s linear;
+  visibility: visible;
+  opacity: 1; }
+
+#skillset-section-2 {
+  position: relative;
+  z-index: 2;
+  background-color: #36393d;
+  padding: 10%;
+  color: white;
+  text-align: center;
+  font-size: 10px; }
+
+#skittles-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px; }
+
+#skillset-section-2 img {
+  width: 15%;
+  margin: 10px;
+  vertical-align: middle; }
 
 /*Bigger font size for bigger screen*/
 @media screen and (min-width: 600px) {
