@@ -336,6 +336,27 @@ nav {
   border: 1px solid black;
   border-collapse: collapse; }
 
+#education-section-1 {
+  position: relative;
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CN1RnNkdIM05zVlU");
+  background-size: cover;
+  height: 500px; }
+
+#education-section-2 {
+  position: relative;
+  z-index: 2;
+  background-color: #36393d;
+  padding: 10%;
+  color: white;
+  text-align: center;
+  font-size: 10px; }
+
+#mortarboard {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5%; }
+
 /*Bigger font size for bigger screen*/
 @media screen and (min-width: 600px) {
   #profile-section-2, #projects-section-2, #achievements-section-2,
