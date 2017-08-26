@@ -332,6 +332,71 @@ nav {
   vertical-align: middle;
 }
 
+#experiences-section-1 {
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#stairs-bottom {
+  position: absolute;
+  top: 0;
+  background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CWnQ4c3hyWGNZRGM');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+  filter: blur(4px);
+}
+
+#stairs-middle {
+  position: absolute;
+  top: 0;
+  background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CVFJrYmg5dTR3RGc');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+  filter: blur(4px);
+}
+
+#stairs-top {
+  position: absolute;
+  top: 0;
+  background-image: url('https://drive.google.com/uc?id=0ByviqDCTZS_CRlhEbzNpc0FDYjA');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+  filter: blur(4px);
+}
+
+#experiences-section-2 {
+  position: relative;
+  z-index: 2;
+  background-color: rgb(54, 57, 61);
+  padding: 10%;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+
+#experiences-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5%;
+}
+
+.table-border, .table-border td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 /*Bigger font size for bigger screen*/
 @media screen and (min-width: 600px) {
   #profile-section-2, #projects-section-2, #achievements-section-2,

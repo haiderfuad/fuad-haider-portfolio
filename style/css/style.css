@@ -170,8 +170,7 @@ nav {
 #achievements-image-1 {
   position: absolute;
   bottom: 0;
-  background-image:
-  url("https://drive.google.com/uc?id=0ByviqDCTZS_CTXNrNVViMlRoNlk");
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CTXNrNVViMlRoNlk");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -181,8 +180,7 @@ nav {
 #achievements-image-2 {
   position: absolute;
   bottom: 0;
-  background-image:
-  url("https://drive.google.com/uc?id=0ByviqDCTZS_CLVVUVkp6WVp4VWc");
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CLVVUVkp6WVp4VWc");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -213,8 +211,7 @@ nav {
   position: absolute;
   bottom: 0;
   left: -30%;
-  background-image:
-  url("https://drive.google.com/uc?id=0ByviqDCTZS_CcU14RTlxdEg4MTQ");
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CcU14RTlxdEg4MTQ");
   background-size: cover;
   height: 120%;
   width: 130%; }
@@ -226,8 +223,7 @@ nav {
   position: absolute;
   top: 5%;
   left: 50%;
-  background-image:
-  url("https://drive.google.com/uc?id=0ByviqDCTZS_CeUh2RnBaMDZ6SGs");
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CeUh2RnBaMDZ6SGs");
   background-size: cover;
   background-position: center;
   height: 10%;
@@ -239,8 +235,7 @@ nav {
   position: absolute;
   top: 20%;
   left: 50%;
-  background-image:
-  url("https://drive.google.com/uc?id=0ByviqDCTZS_CVVZieHNHcEdxZG8");
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CVVZieHNHcEdxZG8");
   background-size: cover;
   background-position: center;
   height: 45%;
@@ -252,8 +247,7 @@ nav {
   position: absolute;
   top: 70%;
   left: 50%;
-  background-image:
-  url("https://drive.google.com/uc?id=0ByviqDCTZS_CR1M1NU5TNnlfa1U");
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CR1M1NU5TNnlfa1U");
   background-size: cover;
   background-position: center;
   height: 30%;
@@ -283,6 +277,64 @@ nav {
   width: 15%;
   margin: 10px;
   vertical-align: middle; }
+
+#experiences-section-1 {
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
+
+#stairs-bottom {
+  position: absolute;
+  top: 0;
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CWnQ4c3hyWGNZRGM");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+  filter: blur(4px); }
+
+#stairs-middle {
+  position: absolute;
+  top: 0;
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CVFJrYmg5dTR3RGc");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+  filter: blur(4px); }
+
+#stairs-top {
+  position: absolute;
+  top: 0;
+  background-image: url("https://drive.google.com/uc?id=0ByviqDCTZS_CRlhEbzNpc0FDYjA");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+  filter: blur(4px); }
+
+#experiences-section-2 {
+  position: relative;
+  z-index: 2;
+  background-color: #36393d;
+  padding: 10%;
+  color: white;
+  text-align: center;
+  font-size: 10px; }
+
+#experiences-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5%; }
+
+.table-border, .table-border td {
+  border: 1px solid black;
+  border-collapse: collapse; }
 
 /*Bigger font size for bigger screen*/
 @media screen and (min-width: 600px) {
